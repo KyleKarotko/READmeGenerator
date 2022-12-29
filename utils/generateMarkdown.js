@@ -55,7 +55,8 @@ function generateMarkdown(data) {
     ## Tests
     ${data.tests}
     ## Contact me with questions
-    ${questions};
+    ${data.github}
+    ${data.email};
     `;
     }
 
