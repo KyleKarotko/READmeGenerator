@@ -12,17 +12,17 @@ const questions = [
     {
       type: 'input',
       name: 'description',
-      message: 'Please give a description of your project repository',
+      message: 'Please give a description of your project repository:',
     },
     {
       type: 'input',
       name: 'installation',
-      message: 'Please provide insturctions on how to install your project',
+      message: 'Please provide insturctions on how to install your project:',
     },
     {
       type: 'input',
       name: 'usage',
-      message: 'Please provide instructions on how to use your project',
+      message: 'Please provide instructions on how to use your project:',
     },
     {
       type: 'list',
@@ -33,17 +33,17 @@ const questions = [
     {
       type: 'input',
       name: 'contributing',
-      message: 'Please provide guidelines on how others can contribute to you project',
+      message: 'Please provide guidelines on how others can contribute to you project:',
     },
     {
         type: 'input',
         name: 'test',
-        message: 'Please provide any tests used to test the project and how to use them',
+        message: 'Please provide any tests used to test the project and how to use them:',
       },
       {
         type: 'input',
         name: 'questions',
-        message: 'Please enter your gitHub username.',
+        message: 'Please enter your gitHub username:',
       },
       {
         type: 'input',
