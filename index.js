@@ -53,7 +53,7 @@ const questions = [
   ];
 
  function writeFile(data) {
-    fs.writeFile(`${data.filename}.md`, generateMarkdown(data), (err) =>
+    fs.writeFile(`${data.title}.md`, generateMarkdown(data), (err) =>
     err ? console.log(err) : console.log('A README.md file has been generated'))
  };
 
