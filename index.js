@@ -4,23 +4,7 @@ const inquirer = require('inquirer');
 const generate = require('./utils/generateMarkdown')
 //const questions = [];
 
-// TODO: Create a function to write README file
-const makeReadMe = ({title, description, installation, usage, license, contributing, tests, questions}) =>
-`#${title}
-## Description
-${description}
-## Installation
-${installation}
-## Usage
-${usage}
-## License
-${license}
-## How to contribute
-${contributing}
-## Tests
-${tests}
-## Contact me with questions
-${questions}`;
+
 
 // TODO: Create an array of questions for user input
 
