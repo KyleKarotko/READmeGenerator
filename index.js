@@ -2,7 +2,6 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
-const generate = require('./utils/generateMarkdown')
 const questions = [
 // TODO: Create an array of questions for user input
     {
@@ -26,9 +25,10 @@ const questions = [
       message: 'Please provide instructions on how to use your project',
     },
     {
-      type: 'input',
+      type: 'list',
       name: 'license',
       message: 'What license are you using on your project repository?',
+      choices: ['MIT', 'BSD', 'Microsoft Public License', 'None']
     },
     {
       type: 'input',
@@ -58,7 +58,12 @@ const questions = [
  };
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer
+      .prompt(questions)
+      .then((response) => {
+        writeFile(response)})
+};
 
 // Function call to initialize app
 init();
