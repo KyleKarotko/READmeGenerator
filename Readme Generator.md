@@ -4,24 +4,24 @@
     - [Description](#description)
     - [Installation](#installation)
     - [Usage](#usage)
-    - [License](#license)
+    - [license](#license)
     - [Contribution](#how to contribute)
     - [Tests](#tests)
     - [Questions](#contact me with questions)
 
-    ##description
+    ## Description
     A command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package.
-    ##installation
+    ## Installation
     Install node. Install inquirer. run nmp init from command line. Or node index.js
-    ##usage
+    ## Usage
     run nmp init from command line. Or node index.js
     ##license
-    ![GitHub License](https://img.shields.io/badge/license-BSD-green.svg)
-    ##how to contribute
+    ![GitHub License](https://img.shields.io/badge/license-MIT-green.svg)
+    ## How to contribute
     You'll need a GitHub account to contribute .Before contributing, make sure you're familiar with the project guidelines and conventions
-    ##tests
+    ## Tests
     Test written prior to the code being tested. Run them and fix errors
-    ##contact me with questions
+    ## Contact me with questions
     KyleKarotko
     KKRTK7@duck.com;
     
