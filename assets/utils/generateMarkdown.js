@@ -24,7 +24,7 @@ function renderLicenseSection(license) {
   if (license === 'None') {
     return ''
   } else {
-    return '## License'
+    return '##license'
   }
 };
 
@@ -32,28 +32,28 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
 
-    ## Table of Contents 
+    ##Table of Contents 
     - [Description](#description)
     - [Installation](#installation)
     - [Usage](#usage)
     - ${renderLicenseLink(data.license)}
-    - [Contribution](#How to contribute)
+    - [Contribution](#how to contribute)
     - [Tests](#tests)
-    - [Questions](#Contact me with questions)
+    - [Questions](#contact me with questions)
 
-    ## Description
+    ##description
     ${data.description}
-    ## Installation
+    ##installation
     ${data.installation}
-    ## Usage
+    ##usage
     ${data.usage}
     ${renderLicenseSection(data.license)}
     ${renderLicenseBadge(data.license)}
-    ## How to contribute
+    ##how to contribute
     ${data.contributing}
-    ## Tests
+    ##tests
     ${data.tests}
-    ## Contact me with questions
+    ##contact me with questions
     ${data.github}
     ${data.email};
     `;
