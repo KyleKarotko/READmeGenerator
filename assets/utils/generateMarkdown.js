@@ -24,7 +24,7 @@ function renderLicenseSection(license) {
   if (license === 'None') {
     return ''
   } else {
-    return '##license'
+    return `## license\n${renderLicenseBadge(license)}`
   }
 };
 
@@ -32,31 +32,35 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
 
-    ##Table of Contents 
-    - [Description](#description)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - ${renderLicenseLink(data.license)}
-    - [Contribution](#how to contribute)
-    - [Tests](#tests)
-    - [Questions](#contact me with questions)
+## Table of Contents 
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- ${renderLicenseLink(data.license)}
+- [Contribution](#how-to-contribute)
+- [Tests](#tests)
+- [Questions](#contact-me-with-questions)
 
-    ## Description
-    ${data.description}
-    ## Installation
-    ${data.installation}
-    ## Usage
-    ${data.usage}
-    ${renderLicenseSection(data.license)}
-    ${renderLicenseBadge(data.license)}
-    ## How to contribute
-    ${data.contributing}
-    ## Tests
-    ${data.tests}
-    ## Contact me with questions
-    ${data.github}
-    ${data.email};
-    `;
+## Description
+${data.description}
+
+## Installation
+${data.installation}
+
+## Usage
+${data.usage}
+
+${renderLicenseSection(data.license)}
+
+## How to contribute
+${data.contributing}
+
+## Tests
+${data.tests}
+
+## Contact me with questions
+${data.github}
+${data.email};`;
     }
 
 module.exports = generateMarkdown;
